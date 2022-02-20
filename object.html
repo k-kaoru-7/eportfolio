@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>About Me</title>
+		<title>Onject-Oriented Information Systems</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 				<a href="index.html" class="title">E-Portfolio</a>
 				<nav>
 					<ul>
-						<li><a href="./">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="aboutme.html" class="active">About Me</a></li>
 					</ul>
 				</nav>
@@ -33,24 +33,331 @@
 						<div class="inner">
 							<h1 class="major">Object-Oriented Information Systems</h1>
 							<h2 class="major">Learning Outcomes</h2>
-							<li>appraise and evaluate critically the concepts and
-								principles of information systems</li>
-							<li>design or modify and document an objectoriented information system using appropriate tools</li>
-							<li>develop an object-oriented information system
-								design, implementing this knowledge in
-								applicable programming languages, such as
-								Python and SQL</li>
-							<li>develop, implement and evaluate critically
-								information system solutions to facilitate business decisions</li>
+							<h3 class="major">Object-Oriented Design</h3>
+							<p>In Object-Oriented Design, a object is a collection of data with associated behaviors.<br>
+							Classes describes objects. A class can define specific sets of characteristics that are shared by all objects from that class.<br>
+							Classes have relation to each other. UML class diagrams describe classes and relationships.<br>
+							In Unit3 and Unit4, I created a class diagram that describes online supermarket as below.</p>
+							<a href="images/oois/unit3_supermarket_diagram.png"><img src=images/oois/unit3_supermarket_diagram.png></a><br>
+							Figure 1 : My class diagram of an online supermarket
+							<br><br> 
+							<a href="https://www.my-course.co.uk/mod/hsuforum/discuss.php?d=290150">Practical Activity: Creating an object-oriented design</a>
+							<br><br>
+							<p>There are some types of relationships in Object-Oriented Design.</p>
+							<li>Association : Relationship among two classes in any way.</li>
+							<li>Composition : The act of collecting several objects together to create a new one.</li>
+							<li>Aggregation : Almost exactly like composition. The difference is that aggregate objects can exist independently.</li>
+							<li>Generalization/Inheritance : Relation between a parent class and a child class that inherits attributes and methods from the parent.</li>
+							<br><br>
+
+							<h3 class="major">Database Design</h3>
+							<h4 class="major">Background to Database approach</h4>
+							<p>There are limitations of traditional file-based systems such as following.
+							<li>Separation and isolation of data</li>
+							<li>Duplication of data</li>
+							<li>Dependency on application programs</li>
+							<li>There was no provision for security, integrity, recovery and shared access</li><br>
+							Database approach was establishedto solve those issues.
+							</p>
+							<h4 class="major">Database components</h4>
+							A database is defined as a shared collection of logically related data and its description that is designed to meet the information needs of an organization. (David et al, 2016)<br>
+							Core elements of a database is the following.
+							<li>Entities : It represents things which is objects in Objects-Oriented Design. It is tables in a databases.</li>
+							<li>Attributes : It is valuables or states within entities, which is columns in tables.</li>
+							<li>Relationship : Links among entities. It is relation connected with keys.</li>
+							- Entities and relationships can be described by using Entity Relationship Diagram(ERD)
+							<li>Primary Key : One or more columns that are used to provide a unique identifier for an individual record in a table.</li>
+							<li>Foreign Key : A column in a table that references a column in another table.</li>
 							<br>
+							<h4 class="major">Normalization</h4>
+							<p>Normalization is a design process to reduce redundancy in the data structure and make tables desirable forms.<br>
+							As an exercise in Unit7, I normalized the undesirable structure of tables and create ERD to describe the design.</p>
+							<a href=https://www.my-course.co.uk/mod/hsuforum/view.php?f=18312>Before Normalization</a>
+							<br>
+							After Normalization : <a href="https://www.my-course.co.uk/mod/hsuforum/discuss.php?d=295045">Normalization in practice</a>
+							<br>
+							<a href="images/oois/unit7_erd.png"><img src=images/oois/unit7_erd.png></a><br>
+							Figure 2 : My ERD that represents normalized tables							
+							<br><br>						
+							<h4 class="major">The operation of Database</h4>
+							<p>The Database Management System(DBMS) is the essential technology to operate databases.<br>
+							DBMS is a software that interacts with the users' application programs and the database.<br>
+							It enables users to do the followings:</p>
+							<li>Create databases and tables with DDL(Data Definition Language)</li>
+							<li>Manipulate data in the database with DML(Data Manipulation Language)<br>
+								- The most common language SQL(Structured Query Language)</li>
+							<li>Provide managed access to the database in terms of security, consistency, shared access and recovery from database troubles.</li>
+							<br>
+							<h3 class="major">Web Development in Python</h3>
+							<h4 class="major">MVC Model</h4>
+							<p>MVC model is the well-known design architecture for web development. It consists of Model,View and Controller.</p>
+							<li>Model : Perform data access and business logic.</li>
+							<li>View : Perform user interface, which displays the data contained within Model. It includes UI components such as forms or buttons that users can see.</li>
+							<li>Controller : A connector between Model and View. It receives data from View and manipulates Model.</li>
+							<br>
+							<a href="images/oois/unit11_mvc_model.png"><img src=images/oois/unit11_mvc_model.png></a><br>
+							Figure 3 : MVC Model (University of Essex Online, 2021)							
+							<br><br>
+							<h4 class="major">Flask</h4>
+							<p>Web frameworks are usually used for web developments nowadays.<br>
+							Flash is a micro web framework for Python. It has Routes as Controller and Templates as View in MVC Model.<br>
+							In addition, Flask Sqlalchemy enables developers to implement Model to access a database.<br>
+							Please see my work, a local doctors' surgery system with Flask, in Artefacts section.</p>
 							<h2 class="major">Artefacts</h2>
-							<p>Under consideration</p>
+							<a href="https://www.my-course.co.uk/mod/hsuforum/view.php?id=569473">Collaborative Discussion 1: Information System Failure</a>
+							<br><br>
+							<a href="https://www.my-course.co.uk/mod/hsuforum/view.php?id=569516">Collaborative Discussion 2: Alternatives to SQL</a>
+							<br><br>
+							<a href="images/oois/unit3_supermarket_diagram.png">Class diagram of a online supermarket</a>
+							<br><br>
+							<a href="images/oois/unit7_class_diagram.png">Class diagram of self-service checkouts at a supermarket</a>
+							<br><br>
+							<a href="images/oois/unit7_erd.png">ERD of normalized tables</a>
+							<br><br>
+							<a href="https://github.com/k-kaoru-7/uoeo_oois_unit11">Local Doctors' Surgery System</a>
+							<br><br>
+							<h2 class="major">Analysis</h2>
+							<p>This section analyzes information that I have gathered throughout this module.<br>
+							I focused on two topics below in collaborative discussions.</p>
+							<h3 class="major">Information System Failure</h3>
+							<p>In Unit1, 2 and 3, I joined in a collaborative discussion about information system failure.<br><br>
+							<a href="https://www.my-course.co.uk/mod/hsuforum/view.php?id=569473">Collaborative Discussion 1: Information System Failure</a><br><br>
+							I choose the system crash in Mizuho bank as a theme, one of the largest Japanese bank.
+							It stopped more than 400 of ATM, and many users could not withdraw their cash due to the incident.
+							In addition, it has occurred several times from February 2021, even now.<br><br>
+							My insight about the reason that causes the incidents is an organizational problem in Mizuho bank.
+							It is said that a main factor is cutting cost of the IT department including the staff reduction (Forbes, 2021).
+							There are less experts who know the information system well in Mizuho bank although it is one of the most complex, largest system in the financial field.
+							There is a possibility this caused failures of recovery from incidents, which means comprehensive and correct actions have not been taken in the organization.<br>
+							It seems that executives in Mizuho bank did not understand the importance of the information system and the impacts on a society.</p>
+							<br>
+							<h3 class="major">Alternatives to SQL</h3>
+							<p>In a collaborative discussion of Unit 8, I researched the information about NoSQL(Not only SQL) as a alternative to SQL.<br><br>
+							<a href="https://www.my-course.co.uk/mod/hsuforum/view.php?id=569516">Collaborative Discussion 2: Alternatives to SQL</a><br><br>
+							There is no necessity to define schemes and relations in the design of a NoSQL databases. 
+							It allows users to store more native data into a database, such as JSON, XML and any other types of objects. It is more suitable for manipulating a big data (Forbes, 2018).<br><br>
+							The major types of NoSQL databases is the following:<br>
+							<table>
+								<tr>
+									<th>Type</th><th>Description</th><th>DB</th>
+								</tr>
+								<tr>
+									<th>Key Value</th><th>Store key/value form of data such as dictionary, hash or associative array.</th><th>Redis, Riak, DynamoDB</th>
+								</tr>
+								<tr>
+									<th>Document</th><th>Store document based, unstructured data such as JSON, XML.</th><th>MongoDB, DynamoDB, CouchDB</th>
+								</tr>
+								<tr>
+									<th>Graph</th><th>Store data in graphical structure. Suitable for a network type of data.</th><th>Neo4j, CosmosDB, OrientDB</th>
+								</tr>
+								<tr>
+									<th>Column</th><th>Inquiry data by column, not by row like RDB. Suitable for manipulating a big data.</th><th>Cassandra, BigTable, HBase</th>
+								</tr>
+							</table>
+							The common advantage of these technologies is the flexibility. There is a less necessity to design complex structure of logical tables and entity-relations like RDB to store unstructured data. 
+							Another merits of NoSQL are a high performance of manipulating big data and high extensibility(Jing et al, 2013).
+							And also, it is developer-friendly since it enables users to insert data in a format used in applications into a database, such as JSON. 
+							Thus, NoSQL technologies allow users to build systems and databases quickly. It might be an effective way for startup businesses. It is also useful for building Data Lake in terms of its feature to store various types of unstructured data easily. <br><br>
+							On the other hand, most of NoSQL databases do not support a rich transaction function. It might be an obstacle to use NoSQL databases in a system that requires strict consistency and safety.<br><br>
+							In conclusion, NoSQL databases have advantages but it cannot replace traditional databases for the time being.</p>
+							<br>
+							<h2 class="major">My evaluation of final projects</h2>
+							<h3 class="major">System Design</h3>
+							I created a class diagram describing self-service checkouts at a supermarket is the following in Unit7 as below.
+							<a href="images/oois/unit7_class_diagram.png"><img src=images/oois/unit7_class_diagram.png></a><br>
+							Figure 4 : My class diagram for self-service checkouts at a supermarket
+							<br><br>
+							Basically, I defined classes by a unit of a object that appears in a scenario of the assignment.
+							I also define classes for business logic as a controller class. 
+							I could grasp the basic relations of Object-Oriented Design such as Inheritance or Composition.
+							However, I added unnecessary objects in classes. These are objects that appear in a scenario but not necessary for the system.
+							<br><br>
+							I learned a principle that Class must be designed based on data and operational functions used in the system in this project.
+							<br><br>
+							<h3 class="major">System Implementation</h3>
+							I implemented a local doctors' surgery system with Python and Flask. My work is uploaded to the following.
+							<br><br>
+							<a href="https://github.com/k-kaoru-7/uoeo_oois_unit11">Local Doctors' Surgery System</a>
+							<br><br>
+							The application was implemented based on MVC Model.
+							<br><br>
+							- Model<br>
+							This performs data access and business logic.
+							ORM(Object-relational mapping) is used to interact with a database.
+							<br><br>
+							- View<br>
+							This performs user interface, which is called templates in Flask application.
+							It includes UI components such as forms or buttons that users can see.
+							<br><br>
+							- Controller<br>
+							Controller is a connector between Model and View. 
+							It accepts input data from View and manipulates Model.
+							It also performs sending response to View.
+							<br><br>
+							I could use the fundamental method of web application design and apply Object-Oriented Programming to the application.
+							<br><br>
+							With regard to testing, I tested manipulating screens and data based on test cases.
+							I think test cases cover all of functions but I should have use auto testing methods more such as JUnit in Java.
+							I will research effective and efficient ways of testing. 
+							<br><br>
 							<h2 class="major">Reflections</h2>
-							<p>Under consideration</p>
-							<h2 class="major">Meeting Notes</h2>
-							<p>Under consideration</p>
+							<h3 class="major">Object-Oriented Design</h3>
+							This module covers the fundamental and application of Object-Oriented Design and Object-Oriented Programming.
+							Before implementing Object-Oriented Programming, Object-Oriented Design must be applied properly. 
+							In Object-Oriented Design, a object contains data and operations to manipulate the data. Objects also represent things in a real world.(Ian, 2016)
+							<br><br>
+							The Object-Oriented Design can be described by using UML(Unified Modeling Language) such as a class diagram.
+							I learned the fundamental of UML by creating some class diagrams shown above sections, class diagrams describing a online super market or self-service checkouts at a supermarket.
+							As written above, objects represent the real thing. It is said that Object-Oriented Design is more understandable because it can be related to things in a real world.(Ian, 2016)
+							However, this does not mean we should create classes to all of things in a real world or scenarios to describe the system.
+							Throughout this activity, it seems to me that the most difficult aspect of the design of Object-Oriented System is to define the scope of classes. 
+							(From my experience, I have not struggled with how to define the outline of the system this much in the design with procedural programming in terms of defining classes.)
+							I defined some classes which is not necessary to implement the system but objects that appear only in the scenario.
+							Class must be designed based on data and operational functions used in the system we are trying to implement.
+							This is a first principle included in the feedback I received from the tutor.
+							<br><br>
+							Another point to be noted is readability.
+							I reviewed outputs of some other students in practical activities, and I realized readability is as important as whether the design meets the requirements of the system.
+							For example, small fonts should not be used in class diagrams. 
+							In addition, scaffolding codes such as getter and setter must no be included in the class as methods(2003, Scott
+							).
+							<br><br>
+							<a href="images/oois/book_scott_scaffolding.png"><img src=images/oois/book_scott_scaffolding.png></a><br>
+							Figure 5 : A class with and without scaffolding (2003, Scott)							
+							<br><br>
+							This kind of rules lead to enhancement of readability and reduction of redundancy.
+							I learned the importance of putting myself in readers' shoes when designing through the activity. 
+							<br><br>
+							<h3 class="major">Object-Oriented Programming</h3>
+							This section examines Object-Oriented Programming. As shown in the above section, it has difficulties but some advantages as well. 
+							<br><br>
+							The followings are the core elements of Object-Oriented Programming, which are not seen in procedural programming such as C.
+							<br><br>
+							Inheritance<br>
+							Polymorphism<br>
+							Encapsulation
+							<br><br>
+							I created a web application to manage a local doctor's surgery with Python and Flask by applying those elements of Object-Oriented Programming, as an assignment in Unit 11.
+							<br><br>
+							Throughout the activity, I realized the concept of Object-Oriented Programming. One of the advantages of Object-Oriented Programming is reusability of the code.
+							Inheritance and Polymorphism enables developers to reduce lines of the codes to implement various functions such as below.
+							<br><br> 
+							<table>
+								<tr>
+									<td>class Employee(object):<br>
+										&nbsp;&nbsp;def __init__(self, name, address, phone):<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;self.name = name<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;self.address = address<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;self.phone = phone<br><br>
+										&nbsp;&nbsp;def say_name(self):<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;print(f'My name is {self.name}.')<br><br>
+										# This is an example of Inheritance.<br>
+										class Receptionist(Employee):<br>
+										&nbsp;&nbsp;def __init__(self, name, address, phone):<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;super().__init__(name, address, phone)<br><br>
+										# This is an example of Inheritance.<br>
+										class WarehouseStaff(Employee):<br>
+										&nbsp;&nbsp;def __init__(self, name, address, phone):<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;super().__init__(name, address, phone)<br><br>
+										def main():<br>
+										# This is an example of Polymorphism.<br>
+										&nbsp;&nbsp;receptionist = Receptionist('George', 'Essex, UK', '123456789')<br>
+										&nbsp;&nbsp;warehouse_staff = WarehouseStaff('Peter', 'London, UK', '987654321')<br>
+										&nbsp;&nbsp;receptionist.say_name()<br>
+										&nbsp;&nbsp;warehouse_staff.say_name()
+									</td>
+								</tr>
+							</table>
+							Without Inheritance, developers have to write same codes by a class and a function.
+							<br><br>
+							The second merit is uniformity. Inheritance and Polymorphism can enhance uniformity of the code.
+							<br><br>
+							<table>
+								<tr>
+									<td>
+										from abc import ABCMeta, abstractmethod<br><br>
+										class Employee(metaclass=ABCMeta):<br>
+										# If get_name method is no implemented, raise TypeError.<br>
+										&nbsp;&nbsp;@abstractmethod<br>
+										&nbsp;&nbsp;def get_name(self) -> str:<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;pass
+									</td>
+								</tr>
+							</table>
+							The example above shows every class inheriting Employee must implement get_name functions.
+							This can prevent the code from the deviation from the implementation's rule of the project. 
+							<br><br>
+							The third positive point is flexibility. In Object-Oriented Programming, data and methods are encapsulated in a class.
+							The data and methods are invisible from outside of the class. In addition, data can be manipulated only through accessor methods.
+							Thanks to Encapsulation, the code based on Object-Oriented Programming can be flexible to change the implementation,
+							which means a change in a class has less impacts on other classes. 
+							In fact, I changed my code several times in the activity, but I could save my time to confirm its impact.
+							<br><br>
+							On the other hand, it seems to me that Object-Oriented Programming is more complex to implement than procedural languages.
+							There are many things to learn before start implementing. It might be an obstacle for beginners to learn programming.
+							Besides, it takes time to design the code. Developers have to consider the unit and the definition of classes first, 
+							such as what data and operations the class should have, or the valuables and the methods should be private or public and so on.
+							Object-Oriented Programming has advantages as I wrote above. Even so, it is likely that it brings less merits to the development of simple applications. 
+							<br><br>
+							Overall, Object-Oriented Programming treats a set of code like a object or a component which has flexibility.
+							It seems that this way of programming is more suitable for large-scale developments in which many developers are involved.
+							<br><br>
+							<h3 class="major">The impact on my professional/personal development</h3>
+							What I have learned throughout this module has beneficial effects on both of my professional career and personal development.
+							<br><br>
+							As a software engineer, I have been involved in the development of a digital marketing system using Data Analytics.
+							The experience I obtained from this module can help me designing the system properly.
+							Many developers have joined the project and the scale of the system is getting large.
+							It is important to create effective documents for the design and strict rules of the implementation to make source codes maintainable and understandable.
+							Therefore, the elements of Object-Oriented Design and Programming, 
+							such as UML, Inheritance, Polymorphism and Encapsulation, are useful for my project as I mentioned the merits above.
+							<br><br>
+							Moreover, I am planning to take a master's degree in the field of Artificial Intelligence and Data Science.
+							Python is the most commonly used language in the area. 
+							I did not use libraries for AI and Data Analytics, such as TensorFlow or Pandas, in this module's activity but I believe the styles of programming I practiced in this module have positive impacts on my future learning. 
+							<br><br>
 							<h2 class="major">Professional Skills Matrix and Action Plan</h2>
-							<p>Under consideration</p>
+							<table>
+								<tr>
+									<th>Skill</th><th>Level</th><th>Next Action</th>
+								</tr>
+								<tr>
+									<th>Object-Oriented Design</th><th>Intermediate</th><th>Apply to a real development in my career</th>
+								</tr>
+								<tr>
+									<th>Object-Oriented Programming</th><th>Intermediate</th><th>Apply to a real development in my career</th>
+								</tr>
+								<tr>
+									<th>Database Logical Design</th><th>Intermediate</th><th>Apply to a real development in my career</th>
+								</tr>
+								<tr>
+									<th>Database Phsyical Design</th><th>Beginner</th><th>Introduce a database on my local environment</th>
+								</tr>
+								<tr>
+									<th>SQL</th><th>Intermediate</th><th>Keep learn advanced SQL, especially SQL with good performance</th>
+								</tr>
+								<tr>
+									<th>Python</th><th>Intermediate</th><th>Learn more useful libraries for my personal development</th>
+								</tr>
+								<tr>
+									<th>Flask</th><th>Beginner</th><th>Develop more complex web application</th>
+								</tr>
+							</table>
+							<h2 class="major">References</h2>
+							<p>Ian, S. (2016) <i>Software Engineering.</i> 10th. London: Pearson Education Limited. Available from: <a href=https://ebookcentral.proquest.com/lib/universityofessex-ebooks/detail.action?docID=5185655>https://ebookcentral.proquest.com/lib/universityofessex-ebooks/detail.action?docID=5185655</a> [Accessed 19 February 2022].
+							<br>
+							David, K. & David, A. (2016) <i>Database Processing: Fundamentals, Design, and Implementation.</i> 14th. London: Pearson Education Limited. Available from: <a href=https://ebookcentral.proquest.com/lib/universityofessex-ebooks/detail.action?docID=5185586>https://ebookcentral.proquest.com/lib/universityofessex-ebooks/detail.action?docID=5185586</a> [Accessed 19 February 2022].
+							<br>
+							Scott, A. (2003) <i>The Elements of UML Style.</i> Cambridge: Cambridge University Press. Available from: <a href=https://web.s.ebscohost.com/ehost/detail?sid=0c243842-c45d-40f9-b0f8-6659f68460c2@redis&vid=0&format=EB&lpid=lp_iv&rid=0#AN=125014&db=nlebk>https://web.s.ebscohost.com/ehost/detail?sid=0c243842-c45d-40f9-b0f8-6659f68460c2@redis&vid=0&format=EB&lpid=lp_iv&rid=0#AN=125014&db=nlebk</a> [Accessed 19 February 2022].
+							<br>
+							Jing, H. et al. (2011) <i>Survey on NoSQL database.</i> Available from: <a href=https://0-ieeexplore-ieee-org.serlib0.essex.ac.uk/document/6106531>https://0-ieeexplore-ieee-org.serlib0.essex.ac.uk/document/6106531</a> [Accessed 9 Feb 2022].
+							<br>
+							Forbes. (2021) Cost-cutting measures by executives to blame for Mizuho glitches, financial watchdog says. Available from: <a href=https://www.japantimes.co.jp/news/2021/11/28/business/corporate-business/mizuho-glitches/?cx_testId=19>https://www.japantimes.co.jp/news/2021/11/28/business/corporate-business/mizuho-glitches/?cx_testId=19</a> [Accessed 9 Feb 2022].
+							<br>
+							Forbes. (2018) Get To Know Relational And NoSQL Databases That Power Big Data Analytics. Available from: <a href=https://www.forbes.com/sites/metabrown/2018/03/31/get-to-know-relational-and-nosql-databases-that-power-big-data-analytics/?sh=4e2c98d71943>https://www.forbes.com/sites/metabrown/2018/03/31/get-to-know-relational-and-nosql-databases-that-power-big-data-analytics/?sh=4e2c98d71943</a> [Accessed 9 Feb 2022].
+							<br>
+							University of Essec Online. (2021) <i>PG Cert Computer Science Web Development and Python </i>[Lecturecast]. OOIS_PCOM7E Object-Oriented Information Systems November 2021. University of Essex Online.
+							</p>
 						</div>
 					</section>
 
