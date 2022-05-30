@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Secure Software Development</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">E-Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutme.html" class="active">About Me</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Secure Software Development</h1>
+							<h2 class="major">Summary of learning activities and artefacts</h2>
+							The below focuses on some topics of the learning outcome that I am most interested through this module.  <br><br>
+							<h3 class="major">Collaborative discussion 1 : UML flocharts</h3>
+							<p>As the first collaborative discussion, I selected one of the coding weaknesses which have been identified by OWASP and created a flowchart of the steps
+							that the weakness occurs.<br>
+							I choosed Session Fixation Attack and desribed it with a sequence diagram at the first.<br>
+							However, I was given the feefback that it was actually a combination of an activity diagram and a sequence diagram by the tutor.<br>
+							Having received the feedback, I recreated the flowchart with an activity diagram as below since it seems that it is more useful to caputure the detail.</p>
+							<a href="images/ssdcs/activity_diagram.png"><img src=images/ssdcs/activity_diagram.png></a><br>
+							Figure 1 : Fixation Attack
+							<br><br>
+							<p>Througout this activity, I have laearned the overview of the security risk in the web development and the way of describing the process by using UML.</p>
+							<h3 class="major">Collaborative discussion 2 : Ontology</h3>
+							<p>As the second collaborative discussion, I described the security vulnerability of TrueCrypt by using ontology map. 
+								Ontology map indicates concepts and relations with a structual map.
+							I categorized the vulnerability and its result with the ontology map as below.</p>
+								<a href="images/ssdcs/ontology_map.png"><img src=images/ssdcs/ontology_map.png></a><br>
+								Figure 2 : Ontology map of TrueCrypt's vulnerability
+								<br><br>
+							<h3 class="major">Team project</h3>
+							<p>
+								In the team activity in Unit 6 and Unit 11, we have designed and implemented the system for managing sensor data in the International Space Station, the ISS.
+								Our system gathers sensor data in the station, such as Oxygen or Fuel, and the users can manage the sensor in the Web based interface.<br><br>
+								The below is the tecnnology stack.<br><br>
+								<a href="images/ssdcs/tech_stack.png"><img src=images/ssdcs/tech_stack.png></a><br><br>
+								The design document can be seen in the following.<br><br>
+								<a href="assignment/Proposal Document.docx">Proposed Design Document</a><br><br>
+								I created some sample codes for API authentication.
+								The below includes the authentication process using token with Flask.
+								The access token is assigned to each accessing user and it is included in the HTTP request.
+								If the token matches with the value for the user, access is authorized. <br><br>
+								<a href="assignment/ApiAuthentication-demos.zip">Sample codes for API authentication with Flask</a><br><br>								
+							</p>
+							<h2 class="major">Analysis</h2>
+							<p>This section focus on analyzing API and Microservice architecture.<br><br>
+								Both are one of the trends that it is tend to adopt to recent development projects. 
+								It can be said that these are useful concepts and technology.
+								It enables developers to reduce dependency among multi services that the system provides.
+								However, it is needed to consider the security risk when using those. For example, many of API are opened to the internet.
+								This means it might help malicious attackers retrieve data from the API.
+								The developers have to enhance the security, considering the risk such as 10 weakness in the wev development defined by OWASP.
+								<br><br>
+								Regarding Microservice, this technology can decrease dependency as well compared to the monolith archtecture.
+								Even so, there is a possibility that Microservice makes the system more complex.
+								The developer must consider how services in the application can collaborate.
+								Im most of cases, I assume they have to use API to request something to anotehr service or to retrieve data in other services.
+								This leads to increase workload to implement Microservice archtecture.
+								<br><br>
+								Thus, we should consider that cutting-edge technologies can be useful while it has negative aspects. 
+							<br><br>
+							<h2 class="major">Reflections</h2>
+							<h3 class="major">Contributions</h3>
+							This section examines contributions as an individual and the team as well as the learning process in this module.
+							<br><br>
+							I have tried to contribute to the team and the development in Unit6 and Unit11. Some of my individual attempts succeeded but it seems while some have not worked well.
+							Our team developed the system for managing sensor data in the International Space Station, the ISS.
+							I believe there are three points that I could contribute to this project. Firstly, I proposed table structures for sensor data or login authentication.
+							And also, I created some sample codes for API access authentication. I proposed this since the code that one of the team members created included ID and Password in the URL parameter.
+							This might have the security risk even if HTTPS is used fot the request. The source code for the assignment was modified based on my sample.
+							The proposition is using a testing tool called Postman. Postman can be used as a stub, which enables testers to send HTTP requests with the body wrritten in Json format to the API.
+							The requests can be managed online with Postman. I believe this could lead to increase in the productivity in the team. 
+							<br><br>
+							Thus, some of my propositions might have had positive effects on the team project. Even so, it was not enough to contribute to the whole team activity.
+							Actually, there are some process that did not work well. The significant point I should mention is the regular meeting.
+							It was needed to join the team meetings regularly as a member and discuss how we proceeded.
+							However, I could not attend those meetings because the huge time difference has been the obstacle for this.
+							I assume this causes failure in each assignment in this module.
+							I should have been using online tools such as Slack or GitHub more effectively.
+							<br><br>
+							Another point that did not work well is the lack of knowledge regarding infrastructure.
+							Our design utilizes some modern technologies such as Microservice or Queuing service, Apatch Kafka.
+							I was not able to review well what one of the teammate established to implement infrastructure for those services due to the lack of knowledge.
+							To be honest, it was not clear for me if using Microservice or any other could services lead to the secure development.
+							Since the assignment is the system for the ISS, I assume there is a possibility that more closed system can mitigate the security risk.
+							Overall, the evaluation to me in the module does not seem good but I have learned how I should manage when working in the global team and what I should learn to develop the secure system. 
+							<br><br>
+							<h3 class="major">The learning process</h3>
+							As far as the learning process in this module, there are two points I would like to note. The first is that I could gain the whole overview of the future trends in secure development in the information system development.
+							This is what I have obtained throughout the module but especially in Unit11.
+							The most interesting trends for me are Fog Computing and Microservice architecture. This is because these technologies are related to my work.
+							I am working for Accenture, one of the biggest IT consulting companies in the world, as a software engineer.
+							Could Computing and Microservice are used in the most of recent development projects in my company. The project that I have been involved is enhancement of the banking mobile application.
+							We are trying to operate the updated application on Cloud. And also the system has been being designed with Microservice architecture.
+							Cloud Computing is useful in terms of that the customers do not have to own their own infrastructure.
+							However, I am a little doubtful about whether Cloud Computing can maintain the advantage in the future.
+							There is a tendency that larger amount of data has been brought to Cloud services. 
+							This might lead to latency when uses retrieve data from Cloud. Moreover, some major Cloud service providers, such as Amazon or Google, can dominate the information on Cloud.
+							It seems for me that this can be the risk. For example as my project, is it safer to put individual information related to banking into RDS on Cloud than on-premise environment?
+							Fog Computing can mitigate the risk of Cloud. Fog Computing provides computation, storage and networking services, which is called FOG nodes, between end users and traditional Cloud services(Roman, 2016).
+							It enables users to analyze and utilize their sensitive information at the 'ground'. I believe this concept can be adopted to my clients in Accenture, banking industry.
+							<br><br>
+							Regarding Microservice, it enables reduce the depenedency among services running in the application compared to legacy Monolith systems.
+							Even so, we should have a look at the disadvantage. Basically, the process among services in Microservice architecture is performed through APIs.
+							The developers have to create a API just to retrieve data from other service. Can it be efficient?
+							In addition, API might have the security risk if it was created without proper security guards such as access authorization or protecting from injections.
+							Actually, I am trying to consider these risks and how to mitigate them when working in my project, having gained the knowledge from this module. 
+							Thus, it has been a meaningful module that reminds me of inspiration for my work.
+							<br><br>
+							The second points to be noted, related to the learning process, is that I notice there are some slight differences in the development process between the team activity and the real projects.
+							One is there is no requirement analysis phase. Basically, most of the systems have its users.
+							The assignment could be more realistic if there would be more concrete requirements regarding the security.
+							Another is we should include the security test in the development. In projects in my company, the system must be tested by the security team which consists of other members for the development. 
+							I recognise we did not conduct this kind of test since we do not have the guide line for the security test and we are only three members.
+							<br><br>
+							In conlusion, I have gained the meaningful experience to adopt to my work environment throughout this module.
+							In addition, it can be helpful for my career in the future that I worked with high-skilled team members whatever my grade is. 
+
+							<br><br>
+							<h2 class="major">Professional Skills Matrix and Action Plan</h2>
+							<table>
+								<tr>
+									<th>Skill</th><th>Level</th><th>Next Action</th>
+								</tr>
+								<tr>
+									<th>API Design</th><th>Intermediate</th><th>Apply to a real development in my career</th>
+								</tr>
+								<tr>
+									<th>Secure Programming</th><th>Beginner</th><th>Need more practice</th>
+								</tr>
+								<tr>
+									<th>Using UML</th><th>Intermediate</th><th>Apply to a real development in my career</th>
+								</tr>
+								<tr>
+									<th>Database Phsyical Design</th><th>Beginner</th><th>Introduce a database on my local environment</th>
+								</tr>
+								<tr>
+									<th>SQL</th><th>Intermediate</th><th>Keep learn advanced SQL, especially SQL with good performance</th>
+								</tr>
+								<tr>
+									<th>Python</th><th>Intermediate</th><th>Learn more useful libraries for my personal development</th>
+								</tr>
+								<tr>
+									<th>Flask</th><th>Beginner</th><th>Develop more complex web application</th>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
